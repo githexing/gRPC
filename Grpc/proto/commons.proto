@@ -1,0 +1,46 @@
+﻿syntax = "proto3";
+
+package UWebCore.Grpc;
+
+option java_package = "cn.ujuz.grpc.hello";
+
+import "google/protobuf/any.proto";
+
+// 公共方法
+message GQueryParams {
+	//页码
+	int32 Index = 1;
+	//每页的条数
+	int32 Size = 2;
+}
+
+
+// 公共方法
+// 返回的数据
+message GResultDataPage {
+	//数据集
+	repeated google.protobuf.Any Data = 1;
+	//总条数
+	int64 Total = 2;
+	//页码
+	int32 Page = 3;
+	//消息
+	string Message = 4;
+	//状态码
+	int32 Code = 5;
+	//状态
+	bool Result = 6;
+}
+
+// 公共方法
+// 返回的数据
+message GResultData {
+	//数据集
+	repeated google.protobuf.Any Data = 1;
+	//消息
+	string Message = 4;
+	//状态码
+	int32 Code = 5;
+	//状态
+	bool Result = 6;
+}

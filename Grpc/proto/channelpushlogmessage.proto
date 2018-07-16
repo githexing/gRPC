@@ -1,0 +1,78 @@
+﻿syntax = "proto3";
+
+package UWebCore.Grpc;
+
+option java_package = "cn.ujuz.grpc.hello";
+
+// 添加
+message GPostChannelPushLog {
+	//经纪人ID
+	int32 TaskId = 1;
+	//经纪人ID
+	int32 AgentId = 2;
+	//房源编号
+	int64 HouseId = 3;
+	//关联类型（1=新房，2=二手房，3=租房）
+	int32 HouseType = 4;
+	//城市代码
+	int32 CityCode = 5;
+	//推送状态(0=未推送，1=已推送)
+	int32 PushStatus = 6;
+	//推送成功预览地址
+	string PushReturnUrl = 7;
+	//推送参数
+	string SubmitParameters = 8;
+	//返回参数
+	string ReturnParameters = 9;
+	//推送时间
+	int64 PushedTime = 10;
+}
+
+// 查询(根据城市中文名字查询任务列表)
+message GQueryChannelPushLogGetList {
+	//渠道名称
+	string ChannelName = 1;
+	//端口名称
+	string PortName = 2;
+	//推送状态(0=未推送，1=已推送) 传参数0、1过来即可
+	string PushStatus = 3;
+	//房源类型（1=新房，2=二手房，3=租房）传参数1,2,3过来即可
+	string HouseType = 4;
+	
+}
+
+// 查询(根据城市中文名字查询任务列表)
+message GQueryChannelPushLogAgentIdTaskId {
+	//经纪人ID
+	int64 AgentId = 1;
+	//TaskId
+	int32 TaskId = 2;
+}
+
+// 返回列表
+message GResultChannelPushLog {
+	//Id
+	int32 Id = 1;
+	//TaskId
+	int32 TaskId = 2;
+	//经纪人ID
+	int64 AgentId = 3;
+	//渠道名称
+	string ChannelName=4;
+	//端口名称
+	string PortName=5;
+	//房源编号
+	int64 HouseId = 6;
+	//关联类型（1=新房，2=二手房，3=租房）
+	string HouseType = 7;
+	//房源名称
+	string HouseName=8;
+	//推送状态(0=未推送，1=已推送)
+	string PushStatus = 9;
+	//推送成功预览地址
+	string PushReturnUrl = 10;
+	//推送时间
+	int64 PushedTime = 11;
+	//推送时间
+	int64 CreateTime = 12;
+}

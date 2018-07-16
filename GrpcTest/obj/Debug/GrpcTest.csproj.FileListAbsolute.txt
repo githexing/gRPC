@@ -1,0 +1,9 @@
+D:\hxx\GrpcClient\Grpc\GrpcTest\bin\Debug\GrpcTest.dll
+D:\hxx\GrpcClient\Grpc\GrpcTest\bin\Debug\GrpcTest.pdb
+D:\hxx\GrpcClient\Grpc\GrpcTest\bin\Debug\Google.Protobuf.dll
+D:\hxx\GrpcClient\Grpc\GrpcTest\bin\Debug\Google.Protobuf.xml
+D:\hxx\GrpcClient\Grpc\GrpcTest\obj\Debug\GrpcTest.csprojAssemblyReference.cache
+D:\hxx\GrpcClient\Grpc\GrpcTest\obj\Debug\GrpcTest.csproj.CoreCompileInputs.cache
+D:\hxx\GrpcClient\Grpc\GrpcTest\obj\Debug\GrpcTest.csproj.CopyComplete
+D:\hxx\GrpcClient\Grpc\GrpcTest\obj\Debug\GrpcTest.dll
+D:\hxx\GrpcClient\Grpc\GrpcTest\obj\Debug\GrpcTest.pdb

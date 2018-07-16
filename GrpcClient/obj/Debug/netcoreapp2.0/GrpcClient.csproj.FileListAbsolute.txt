@@ -1,0 +1,14 @@
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.csprojAssemblyReference.cache
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.csproj.CoreCompileInputs.cache
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.AssemblyInfoInputs.cache
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.AssemblyInfo.cs
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\GrpcClient.deps.json
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\GrpcClient.runtimeconfig.json
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\GrpcClient.runtimeconfig.dev.json
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\GrpcClient.dll
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\GrpcClient.pdb
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\Grpc.dll
+D:\hxx\GrpcClient\Grpc\GrpcClient\bin\Debug\netcoreapp2.0\Grpc.pdb
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.csproj.CopyComplete
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.dll
+D:\hxx\GrpcClient\Grpc\GrpcClient\obj\Debug\netcoreapp2.0\GrpcClient.pdb

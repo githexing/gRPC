@@ -1,0 +1,57 @@
+﻿syntax = "proto3";
+
+package UWebCore.Grpc;
+
+option java_package = "cn.ujuz.grpc.hello";
+
+import "commons.proto";
+import "stationedagentmessage.proto";
+import "channelpushlogmessage.proto";
+import "channelpushtaskmessage.proto";
+
+//---------------------------
+//服务器：dopengrpc.ujuz.cn
+//端  口：16881
+//---------------------------
+
+// 驻守经纪人
+service GStationedAgent {
+	//添加驻守经纪人
+	rpc addAgent (GPostStationedAgent) returns (GResultData) {}
+
+	//删除驻守经纪人
+	rpc delAgent (GDeleteStationedAgent) returns (GResultData) {}
+
+	//根据房源类别以Id查询对应的驻守经纪人
+	rpc agentlist (GQueryParamsAgent) returns (GResultDataPage) {}
+	
+	
+}
+
+//---------------------------------------------------------------
+
+// 渠道推送任务
+service GChannelPushTask {
+	//添加任务
+	rpc addTask (GPostChannelPushTask) returns (GResultData) {}
+
+	//根据城市中文名字查询任务列表
+	rpc getList (GQueryChannelPushTaskGetList) returns (GResultDataPage) {}
+
+	//根据经纪人Id查询
+	rpc getByAgentId (GQueryChannelPushTaskAgentId) returns (GResultDataPage) {}
+}
+
+//---------------------------------------------------------------
+
+// 渠道端口推送记录
+service GChannelPushLog {
+	//添加推送记录
+	rpc addLog (GPostChannelPushLog) returns (GResultData) {}
+
+	//查询推送记录列表
+	rpc getList (GQueryChannelPushLogGetList) returns (GResultDataPage) {}
+
+	//根据AgentId，TaskId查询数据，当TaskId为0的时候忽略TaskId
+	rpc getByAgentIdTaskId (GQueryChannelPushLogAgentIdTaskId) returns (GResultDataPage) {}
+}

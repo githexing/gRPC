@@ -1,0 +1,8 @@
+D:\hxx\GrpcClient\Grpc\Grpc\bin\Debug\netstandard2.0\Grpc.deps.json
+D:\hxx\GrpcClient\Grpc\Grpc\bin\Debug\netstandard2.0\Grpc.dll
+D:\hxx\GrpcClient\Grpc\Grpc\bin\Debug\netstandard2.0\Grpc.pdb
+D:\hxx\GrpcClient\Grpc\Grpc\obj\Debug\netstandard2.0\Grpc.csproj.CoreCompileInputs.cache
+D:\hxx\GrpcClient\Grpc\Grpc\obj\Debug\netstandard2.0\Grpc.AssemblyInfoInputs.cache
+D:\hxx\GrpcClient\Grpc\Grpc\obj\Debug\netstandard2.0\Grpc.AssemblyInfo.cs
+D:\hxx\GrpcClient\Grpc\Grpc\obj\Debug\netstandard2.0\Grpc.dll
+D:\hxx\GrpcClient\Grpc\Grpc\obj\Debug\netstandard2.0\Grpc.pdb

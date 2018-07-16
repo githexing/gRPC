@@ -1,0 +1,62 @@
+﻿syntax = "proto3";
+
+package UWebCore.Grpc;
+
+option java_package = "cn.ujuz.grpc.hello";
+
+// 写入驻守经纪人
+message GPostStationedAgent {
+	//经纪人Id
+	int64 AgentId = 1;
+	//经纪人名称
+	string Name = 2;
+	//联系电话
+	string Phone = 3;
+	//头像
+	string Picture = 4;
+	//所属公司
+	string Company = 5;
+	//描述
+	string Description = 6;
+	//城市代码
+	int32 Code = 7;
+	//房源编号
+	int64 HouseId = 8;
+	//关联类型（1=新房，2=二手房，3=租房）
+	string HouseType = 9;
+}
+// 驻守经纪人
+message GDeleteStationedAgent{
+    //Id（数据库编号ID，并非经纪人Id）
+	int64 Id = 1;
+}
+
+// 驻守经纪人 
+message GQueryParamsAgent {
+	//页码
+	int32 Index = 1;
+	//每页的条数
+	int32 Size = 2;
+	//房源类别（1新房,2二手房,3租房,4小区）
+	int32 HouseType = 3;
+	//（根据HouseType来决定是什么Id）1新房Id / 2二手房Id / 3租房Id / 4小区Id
+	int64 HouseId = 4;
+	//城市Code
+	string CityCode = 5;
+}
+
+// 返回驻守经纪人
+message GResultStationedAgent {
+	//经纪人Id
+	int64 AgentId = 1;
+	//经纪人名称
+	string Name = 2;
+	//联系电话
+	string Phone = 3;
+	//头像
+	string Picture = 4;
+	//所属公司
+	string Company = 5;
+	//描述
+	string Description = 6;
+}

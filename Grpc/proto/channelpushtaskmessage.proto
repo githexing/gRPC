@@ -1,0 +1,65 @@
+﻿syntax = "proto3";
+
+package UWebCore.Grpc;
+
+option java_package = "cn.ujuz.grpc.hello";
+
+// 添加
+message GPostChannelPushTask {
+	
+	//经纪人ID
+	int64 AgentId = 1;
+	//城市代码
+	int32 CityCode = 2;
+	//城市中文名称
+	string CityChineseName = 3;
+	//渠道名称：58、安居客、诸葛找房、吉屋网等
+	string ChannelName = 4;
+	//端口名称：渠道下对应的产品名称
+	string PortName = 5;
+	//任务开始时间
+	int64 TaskStartTime = 6;
+	//任务结束时间
+	int64 TaskEndTime = 7;
+	
+}
+
+// 查询(根据城市中文名字查询任务列表)
+message GQueryChannelPushTaskGetList {
+	//城市中文名字
+	string CityChineseName = 1;
+	//页码
+	int32 Index = 2;
+	//每页的条数
+	int32 Size = 3;
+}
+
+// 查询(根据城市中文名字查询任务列表)
+message GQueryChannelPushTaskAgentId {
+	//经纪人Id
+	int64 AgentId = 1;
+	//页码
+	int32 Index = 2;
+	//每页的条数
+	int32 Size = 3;
+}
+
+// 返回列表
+message GResultChannelPushTask {
+	//经纪人ID
+	int64 AgentId = 1;
+	//城市代码
+	int32 CityCode = 2;
+	//城市中文名称
+	string CityChineseName = 3;
+	//渠道名称：58、安居客、诸葛找房、吉屋网等
+	string ChannelName = 4;
+	//端口名称：渠道下对应的产品名称
+	string PortName = 5;
+	//任务开始时间
+	int64 TaskStartTime = 6;
+	//任务结束时间
+	int64 TaskEndTime = 7;
+	//任务创建时间
+	int64 TaskCreateTime = 8;
+}
